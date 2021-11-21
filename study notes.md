@@ -1,4 +1,4 @@
-# 学习笔记
+# 基本语法
 
 ## 登陆登出
 ```
@@ -50,7 +50,60 @@ insert into pet values('petname', 'ownername', 'species', 'f', 'date', 'date');
 
 -- 修改数据
 update pet set name = 'squirrel' where owner = 'diane';
+
+-- 删除数据
+delete from pet where name = 'Maxwell';
+
+-- 修改数据
+update pet set name = 'wangwangcai' where owner = 'zhouxinchi';
 ```
+# 键表约束
+
+## 主键约束
+可以唯一确认一张表中的一条记录
+通过给某个字段添加约束，使得该字段不重复且不为空
+```
+create table user(
+  id int primary key,
+  name varchar(20) 
+);
+
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | NO   | PRI | NULL    |       |
+| name  | varchar(20) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+PRI代表主键约束
+
+-- 插入数据
+insert into user values(1, 'zhangsan');
++----+----------+
+| id | name     |
++----+----------+
+|  1 | zhangsan |
++----+----------+
+
+-- 联合主键
+create table user2(
+  id int,
+  name varchar(20),
+  password varchar(20),
+  primary key(id, name)
+);
+```
+
+## 自增约束
+
+## 外键约束
+
+## 唯一约束
+
+## 非空约束
+
+## 默认约束
+
+
 
 
 
