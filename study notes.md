@@ -22,7 +22,7 @@ use test;
 -- 显示数据库中所有的表
 show tables;
 
-## 创建数据表
+-- 创建数据表
 create table pet(
   name varchar(20),
   owner varchar(20),
@@ -32,14 +32,14 @@ create table pet(
   death date
 );
 
-## 查看数据表结构
+-- 查看数据表结构
 describe pet;
 desc pet;
 
-## 查询表
+-- 查询表
 select * from pet;
 
-## 删除表
+-- 删除表
 drop table pet;
 ```
 
@@ -48,7 +48,7 @@ drop table pet;
 -- 插入数据
 insert into pet values('petname', 'ownername', 'species', 'f', 'date', 'date');
 
-## 修改数据
+-- 修改数据
 update pet set name = 'squirrel' where owner = 'diane';
 ```
 
