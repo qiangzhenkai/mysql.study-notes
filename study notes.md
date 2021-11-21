@@ -1,12 +1,12 @@
 #学习笔记
 ## 登录MySQL
-$ mysql -u root -p12345612
+> $ mysql -u root -p12345612
 
 ## 退出MySQL数据库服务器
-exit;
+> exit;
 
 ## 创建数据库
-create database test;
+> create database test;
 
 ## 切换数据库
 use test;
