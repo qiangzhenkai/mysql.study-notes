@@ -8,13 +8,18 @@ mysql -u root -p12345612
 -- 退出MySQL数据库服务器
 exit;
 ```
-## 创建数据库
+```
+-- 创建数据库
 create database test;
 
-## 切换数据库
+-- 切换数据库
 use test;
+```
 
-## 显示数据库中所有的表
+
+## 数据表操作
+```
+-- 显示数据库中所有的表
 show tables;
 
 ## 创建数据表
@@ -34,14 +39,18 @@ desc pet;
 ## 查询表
 select * from pet;
 
-## 插入数据
+## 删除表
+drop table pet;
+```
+
+## 数据操作
+```
+-- 插入数据
 insert into pet values('petname', 'ownername', 'species', 'f', 'date', 'date');
 
 ## 修改数据
 update pet set name = 'squirrel' where owner = 'diane';
-
-## 删除表
-drop table pet;
+```
 
 
 
