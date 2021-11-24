@@ -105,7 +105,17 @@ create table user2(
 
 
 
-
+-- 创建数据表
+create table transformer_3(
+  NUMBER varchar(20),
+  DATE date,
+  TIME time,
+  I LONGTEXT,
+  Q LONGTEXT,
+  MALFUCTION char(1),
+  MAL_TYPE char(1),
+  COMPARISON char(1)
+);
 
 
 
