@@ -103,8 +103,7 @@ create table user2(
 
 ## 默认约束
 
-
-
+```
 -- 创建数据表
 create table transformer_3(
   NUMBER varchar(20),
@@ -116,6 +115,6 @@ create table transformer_3(
   MAL_TYPE char(1),
   COMPARISON char(1)
 );
-
+```
 
 
